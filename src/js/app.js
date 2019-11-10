@@ -19,3 +19,17 @@ const score_audio = new Audio(); // Создание аудио объекта
 
 fly.src = "/src/audio/fly.mp3"; // Указание нужной записи
 score_audio.src = "/src/audio/score.mp3"; // Аналогично
+
+const gap = 90;
+
+// При нажатии на какую-либо кнопку
+document.addEventListener("keydown", moveUp);
+
+function moveUp() {
+  yPos -= 25;
+  fly.play();
+}
+
+
+
+
